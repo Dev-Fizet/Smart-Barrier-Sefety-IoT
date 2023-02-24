@@ -1,2 +1,2 @@
-# Smart-Barrier-Sefety-IoT
+# Smart Safe Barrier IoT
 Proyecto Final del Curso de Código IoT
