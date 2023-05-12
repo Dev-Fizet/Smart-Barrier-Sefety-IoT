@@ -1,0 +1,71 @@
+body{
+  background-color: rgb(119, 170, 217);
+}
+
+.flex-container{
+  
+  
+  background: rgb(119, 170, 217);
+  padding: 20px;
+  display: flex; 
+  margin: 0 auto; 
+  
+  width: 80%;
+  justify-content: center;
+  align-items: center;
+  height: 800px;
+  margin: 0 auto; 
+  flex-flow: row wrap;
+}
+
+.caja{
+  
+  background-color: rgb(119, 170, 217); 
+  color: black; 
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold; 
+  width: 400px;
+  height: 500px;
+  line-height: center;
+  text-align: center;
+  margin: 5px;
+
+}
+
+.c1{
+  background-color:rgb(119, 170, 217);
+  flex-grow: 3; 
+  
+}
+.cloud{
+  font-size: 100px;
+  color: white; 
+}
+.c2{
+  background-color: rgb(119, 170, 217);
+  flex-grow: 5; 
+  align-items: center;
+}
+
+.valor{
+  font-size: 35px;
+  font-family: 'Roboto', sans-serif;
+  color: white; 
+  font-weight: normal;
+}
+
+.texto1{
+  font-size: 35px;
+  font-family: 'Roboto', sans-serif;
+  color: white; 
+  font-weight: normal;
+}
+canvas {
+  max-width: 100%;
+}
+#valorA{
+  font-size: 35px;
+  font-family: 'Roboto', sans-serif;
+  color: white; 
+  font-weight: normal;
+}
