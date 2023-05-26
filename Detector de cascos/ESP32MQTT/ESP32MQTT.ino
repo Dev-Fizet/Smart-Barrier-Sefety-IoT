@@ -34,8 +34,8 @@
 // ===========================
 // Enter your WiFi credentials
 // ===========================
-const char* ssid = "Totalplay-2.4G-e450";
-const char* password = "qZtekCUdE9tsvXnN";
+const char* ssid = "Nombre-de-tu-red";
+const char* password = "contraseña";
 
 //Datos del broker MQTT
 const char* mqtt_server = "52.28.68.205"; // Si estas en una red local, coloca la IP asignada, en caso contrario, coloca la IP publica
