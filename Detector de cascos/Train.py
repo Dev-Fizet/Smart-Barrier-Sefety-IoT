@@ -5,7 +5,7 @@ import cv2
 import os 
 import numpy as np
 
-dataPath = "/home/karen/Documents/GitHub/Detector_de_cascos/Dataset" #Especificar la ruta donde se encuentra almacenado el dataset
+dataPath = "ruta donde se encuentra la carpeta Dataset" #Especificar la ruta donde se encuentra almacenado el dataset
 dir_list = os.listdir(dataPath) #Se listan las carpetas que se encuentran en la carpeta especificada
 print("Lista archivos:", dir_list) #Se muestra en la consola el nombre de las carpetas dentro del directorio donde se encuentran los datasets
  
@@ -39,5 +39,5 @@ print("Entrenando, por favor espera...")
 face_mask.train(facesData, np.array(labels))
 
 # Almacenar modelo
-face_mask.write("modelo_cascos1.xml")
+face_mask.write("modelo_cascos.xml")
 print("Modelo almacenado exitosamente") 
