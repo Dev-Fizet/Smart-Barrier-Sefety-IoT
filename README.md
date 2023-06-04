@@ -9,7 +9,10 @@ Finalmente, el proyecto queda completo con un detector de cascos de seguridad qu
 
 ## Objetivos
 
-+ efekfdkfdklfdf
++ Haciendo uso de un sensor de proximidad realizar un dispositivo de seguridad que indique al usuario cuando se encuentrte en una zona de alto riesgo, en donde su acceso está prohibido.
++ Construir un prototipo que sense los niveles de CO2 y con los datos obtenidos se grafique para monitoreo del usuario.
++ Programar un código que identifique si una persona lleva puesto casco de seguridad para oermitir su acceso.
++ Realizar un dashboard en Node Red donde se puedan visualizar todos los datos obtenidos de las diferentes variables de seguridad que se establecieron al inicio del proyecto, como lo son los noveles de CO2, acceso a zonas determinadas y verificación del casco de seguridad.
 
 ## Justificación
 
