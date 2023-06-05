@@ -84,9 +84,22 @@ Ahora ya puedes ejecutar el código Prueba_cascos.py. Solo cambia la IP que obtu
 
 ![Línea a modificar](https://github.com/Dev-Fizet/Smart-Security-for-Industry-IoT/blob/main/L%C3%ADnea%20a%20modificar.png)
 
-4. 
+4. Dirígete a Node Red y agrega el el flow [Detector_de_cascos.json](https://github.com/Dev-Fizet/Smart-Security-for-Industry-IoT/blob/main/Detector_cascos.json)
 
+5. Realiza la siguiente conexión:
 
+![Conexión con led](https://github.com/Dev-Fizet/Smart-Security-for-Industry-IoT/blob/main/Esquema2.jpg)
 
+Una vez terminadas las conexiones descarga la carpeta donde se encuentra el código de la ESP32, puedes encontrarla dando clic  [aquí](https://github.com/Dev-Fizet/Smart-Security-for-Industry-IoT/tree/main/Detector%20de%20cascos/ESP32MQTT)
+
+Habrá cuatro archivos diferentes, tres de ellos son necesarios para que la  ESP32 pueda conectarse a WiFi. Abre el archivo que se llama "ESP32MQTT.ino".
+
+Al igual que en ejemplo CameraWebServer, deberás poner el nombre y contraseña de tu red WiFi.
+
+Además deberás agregar los datos del broker al que se conectará, el broker utilizado es brokerhivemq.com
+
+Debido a que se necesita una IP para poder conectarse usa el comando nslookup broker.hivemq.com desde tu terminal, de esta forma obtendrás la IP del broker público, esa IP es la que deberás colocar en la línea 41 del código. 
+
+Una vez hecho esto carga el programa en la ESP32 y listo, ya tienes un programa que identifica si se lleva casco de seguridad. Si es así envía un mensaje por MQTT que es recibido por Node Red y activa un indicador. La ESP32 lee el mensaje que llega a Node Red y enciende un LED.
 
 ## Elaborado por
