@@ -16,8 +16,26 @@ Finalmente, el proyecto queda completo con un detector de cascos de seguridad qu
 
 ## Justificación
 
+Dentro de la industria, se pueden encontrar máquinas que facilitan diversos procesos, como el envasado o la fabricación de productos. Estas máquinas a menudo operan a altas velocidades o ejercen una fuerza considerable, lo que representa un riesgo para quienes se encuentren cerca de ellas. Las máquinas son solo uno de los múltiples ejemplos de los riesgos existentes en el entorno industrial. Por tanto, la seguridad desempeña un papel fundamental en la protección de los trabajadores y en la prevención de accidentes en este ámbito.
+
+Sin embargo, en ocasiones, los propios trabajadores pueden ser la causa de los accidentes debido a descuidos, como no utilizar el equipo de seguridad adecuado o ingresar a zonas no seguras. Con la elaboración de este proyecto, se busca reducir las distracciones que puedan afectar a los trabajadores mediante la implementación de alertas que les indiquen cuando se encuentren en una zona peligrosa o les recuerden la necesidad de utilizar su equipo de seguridad.
+
+El objetivo principal de este proyecto es mejorar la seguridad laboral y minimizar los riesgos en el entorno industrial. Al establecer un sistema de alertas efectivo, se pretende crear un ambiente de trabajo más seguro y consciente, donde los trabajadores estén constantemente recordados de la importancia de cumplir con las medidas de seguridad establecidas. De esta manera, se espera prevenir accidentes y garantizar la integridad y bienestar de todos los empleados en el entorno industrial
 
 ## Requisitos
+
++ ESP32 CAM OV2640
++ FTDI TTL USB Serial Converter FT232RL
++ LED
++ Resistencia de 330Ω
+
+Además se necesitará tener instalado:
+
++ Python (cualquier versión entre las 3.6 y 3.8, ya que las librerías que se utilizarán trabajan en estas versiones).
++ OpenCV, para instalar OpenCV  ejecuta 'pip install opencv-contrib-python' desde la terminal de Python.
++ Node Red
++ Arduino IDE
++ Mediapipe, para instalarlo ejecuta 'pip install mediapipe'.
 
 ## Detector CO2
 <p> En este apartado encontras un breve resumen de la codigos de la carpeta llamada: CO2 y su conexion con node-red. Tambien encontraras un diagrama de conexiones para que puedas ver el codigo en funcionamiento. </p>
