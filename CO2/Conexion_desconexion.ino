@@ -52,6 +52,7 @@ void loop() {
     reconnect();
   }
   client.loop();
+ 
 }
 
 void callback(char* topic, byte* payload, unsigned int length) {
@@ -75,16 +76,23 @@ void callback(char* topic, byte* payload, unsigned int length) {
 
 void reconnect() {
   while (!client.connected()) {
-    Serial.print("Intentando conexión al servidor MQTT...");
-    
-    if (client.connect("ESP32Client")) {
+    Serial.print("Intentando conectarse MQTT...");
+    // Creamos un cliente ID
+    String clientId = "Tzec-Intento_";
+    clientId += String(random(0xffff), HEX);
+
+    if (client.connect(clientId.c_str())) {
       Serial.println("Conectado");
-      client.subscribe(mqttTopic);
+
+       client.subscribe(mqttTopic);
+
     } else {
-      Serial.print("Falló, rc=");
+      Serial.print("Fallo, rc=");
       Serial.print(client.state());
-      Serial.println(" Intentando nuevamente en 5 segundos");
+      Serial.println(" intentar de nuevo en 5 segundos");
+      // Wait 5 seconds before retrying
       delay(5000);
     }
   }
-} /// msg.payload = '{"mensajero": "node-red", "estado": "' + global.get("estado") + '" }';
+}
+ /// msg.payload = '{"mensajero": "node-red", "estado": "' + global.get("estado") + '" }';
