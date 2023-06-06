@@ -28,6 +28,10 @@ El objetivo principal de este proyecto es mejorar la seguridad laboral y minimiz
 + FTDI TTL USB Serial Converter FT232RL
 + LED
 + Resistencia de 330Ω
++ Resistencia de 1KΩ
++ Transistor 2N2222
++ ESP32 
++ Sensor MQ-135 
 
 Además se necesitará tener instalado:
 
@@ -35,6 +39,9 @@ Además se necesitará tener instalado:
 + OpenCV, para instalar OpenCV  ejecuta 'pip install opencv-contrib-python' desde la terminal de Python.
 + Node Red
 + Arduino IDE
++ Libreria PubSubClient
++ Libreria AverageValue 
++ Libreria ArduinoJson 
 + Mediapipe, para instalarlo ejecuta 'pip install mediapipe'.
 
 ## Detector CO2
@@ -42,7 +49,7 @@ Además se necesitará tener instalado:
 
 Antes de comenzar necesitaras instalar algunas librerias: 
 
-Para poder llegar al archivo ==> [CO2_con_MQTT.ino] (https://github.com/Dev-Fizet/Smart-Security-for-Industry-IoT/blob/main/CO2/CO2_con_MQTT.ino) se tuvo que realizar una calibracion previa, esta calibracion y toda al explicacion a fondo del programa la puedes encontrar en: [Calibracion sensor MQ-135] (https://edu.codigoiot.com/mod/lesson/edit.php?id=3914&mode=full) en donde se trata de emitar la curva que tiene el sensor MQ-135 al momento de medir solamente CO2. 
+Para poder llegar al archivo ==> ![CO2_con_MQTT.ino] (https://github.com/Dev-Fizet/Smart-Security-for-Industry-IoT/blob/main/CO2/CO2_con_MQTT.ino) se tuvo que realizar una calibracion previa, esta calibracion y toda al explicacion a fondo del programa la puedes encontrar en: ![Calibracion sensor MQ-135] (https://edu.codigoiot.com/mod/lesson/edit.php?id=3914&mode=full) en donde se trata de emitar la curva que tiene el sensor MQ-135 al momento de medir solamente CO2. 
 
 Recomiendo que el sensor de caliente o se mantenga encendido durante 24 horas para eliminar alguna humedad que contenga. Una vez calibrado, el codigo toma en cuenta las diferentes variables calculadas, para despues realizar la lectura de PPM. 
 
