@@ -32,6 +32,8 @@ El objetivo principal de este proyecto es mejorar la seguridad laboral y minimiz
 + Transistor 2N2222
 + ESP32 
 + Sensor MQ-135 
++ Instalar mysql, este link sirve como guia para ubuntu [Mysql](https://platzi.com/tutoriales/1566-bd/8226-como-instalar-mysql-y-workbench-en-ubuntu-sin-morir-en-el-intento/), si es instalado en windows, descargar normalmente. 
++ Instalar grafana: [Grafana](https://grafana.com/docs/grafana/latest/setup-grafana/installation/debian/)
 
 Además se necesitará tener instalado:
 
@@ -69,6 +71,10 @@ Primero el usuario tendra que colocar el limite de partes por millon permitidas 
 Despues se necesitara el codigo de la ESP32 que prendera el dispositivo: [Conexion-ESP32](https://github.com/Dev-Fizet/Smart-Security-for-Industry-IoT/tree/main/CO2/Codigos%20para%20ESP32/Conexion_desconexion) 
 
 Este programa realizara la activacion de un relevador para el encendido de un dispositivo cuando reciba un "TRUE" enviado por el mensajero de Node-red cuando las ppm sean mayores a las colocadas por el usuario. 
+
+En esta imagen se muestran las conexiones del relavador *Verifica que las conexiones esten bien antes de conectarlo la clavija, ya que podria causar un cortocircuito*
+
+![Conexion-esp32-relevador](https://github.com/Dev-Fizet/Smart-Security-for-Industry-IoT/blob/main/CO2/Media/Esquema_ESP32-Foco.png)
 
 Por ultimo se utilizo grafana para poder graficar los datos del sensor, teniendo el dashboard de la siguiente manera: 
 ![Dashboard-CO2](https://github.com/Dev-Fizet/Smart-Security-for-Industry-IoT/blob/main/CO2/Media/Dashboard-CO2.png)
