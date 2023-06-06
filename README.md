@@ -47,9 +47,13 @@ Además se necesitará tener instalado:
 ## Detector CO2
 <p> En este apartado encontras un breve resumen de la codigos de la carpeta llamada: CO2 y su conexion con node-red. Tambien encontraras un diagrama de conexiones para que puedas ver el codigo en funcionamiento. </p>
 
-Antes de comenzar necesitaras instalar algunas librerias: 
+Para poner en marcha este apartado, se utilizara el siguiente codigo en arduino: [CO2 con Node-Red](https://github.com/Dev-Fizet/Smart-Security-for-Industry-IoT/tree/main/CO2/Codigos%20para%20ESP32/CO2%20con%20Node-red). En donde encontrarás la calibracion del sensor MQ-135 para obtener solamente la lectura de CO2 (sensor que es utilizado en ste proyecto). Tambien en el codigo encontraras la conexion al broker hivemq, esta comonicacion nos permitira enviar las PPM (Partes por millón) del sensor a traves de internet y esta misma las recibira en node-red. 
 
-Para poder llegar al archivo ==> ![CO2_con_MQTT.ino](https://github.com/Dev-Fizet/Smart-Security-for-Industry-IoT/blob/main/CO2/CO2_con_MQTT.ino) se tuvo que realizar una calibracion previa, esta calibracion y toda al explicacion a fondo del programa la puedes encontrar en: ![Calibracion sensor MQ-135](https://edu.codigoiot.com/mod/lesson/edit.php?id=3914&mode=full) en donde se trata de emitar la curva que tiene el sensor MQ-135 al momento de medir solamente CO2. 
+A continuacion se muestra como node-red realiza el recebimiento de datos 
+
+![Node-red](https://github.com/Dev-Fizet/Smart-Security-for-Industry-IoT/blob/main/CO2/Media/Node-red%20receptro.png)
+
+Da click en el siguiente enlace para ir al archivo princip ==> [CO2_con_MQTT.ino](https://github.com/Dev-Fizet/Smart-Security-for-Industry-IoT/tree/main/CO2/Codigos%20para%20ESP32/CO2%20con%20Node-red) se tuvo que realizar una calibracion previa, esta calibracion y toda al explicacion a fondo del programa la puedes encontrar en: ![Calibracion sensor MQ-135](https://edu.codigoiot.com/mod/lesson/edit.php?id=3914&mode=full) en donde se trata de emitar la curva que tiene el sensor MQ-135 al momento de medir solamente CO2. 
 
 Recomiendo que el sensor de caliente o se mantenga encendido durante 24 horas para eliminar alguna humedad que contenga. Una vez calibrado, el codigo toma en cuenta las diferentes variables calculadas, para despues realizar la lectura de PPM. 
 
