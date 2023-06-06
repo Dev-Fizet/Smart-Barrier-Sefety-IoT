@@ -53,12 +53,27 @@ A continuacion se muestra como node-red realiza el recebimiento de datos
 
 ![Node-red](https://github.com/Dev-Fizet/Smart-Security-for-Industry-IoT/blob/main/CO2/Media/Node-red%20receptro.png)
 
-Da click en el siguiente enlace para ir al archivo princip ==> [CO2_con_MQTT.ino](https://github.com/Dev-Fizet/Smart-Security-for-Industry-IoT/tree/main/CO2/Codigos%20para%20ESP32/CO2%20con%20Node-red) se tuvo que realizar una calibracion previa, esta calibracion y toda al explicacion a fondo del programa la puedes encontrar en: ![Calibracion sensor MQ-135](https://edu.codigoiot.com/mod/lesson/edit.php?id=3914&mode=full) en donde se trata de emitar la curva que tiene el sensor MQ-135 al momento de medir solamente CO2. 
+Como se puede observar en la imagen el escuchador se suscribe al tema para poder obtener el dato, este recibira un paquete json que contendra: 
 
-Recomiendo que el sensor de caliente o se mantenga encendido durante 24 horas para eliminar alguna humedad que contenga. Una vez calibrado, el codigo toma en cuenta las diferentes variables calculadas, para despues realizar la lectura de PPM. 
-
-Cuando se han calculado las partes 
+  + El nombre del emisor 
+  + El dato del emisor 
   
+Despues pasara por un json para convertirlo a object y en las funciones se extraeran los datos para inyectarlos a la base datos, tambien se colocaron varios debug para revisar que todo este saliendo de la manera correcta. 
+
+La siguiente parte del flow en node red es la siguiente: 
+
+![Node-red conexion](https://github.com/Dev-Fizet/Smart-Security-for-Industry-IoT/blob/main/CO2/Media/Node-red%20conexion.png)
+
+Primero el usuario tendra que colocar el limite de partes por millon permitidas en el ambiente que este sensando, para posteriormente cuando se sobre pase el limite accionar algun ventilador. Esta parte del flow manda el mensaje a otra ESP32 que activara o desactivara algun dispositivo. 
+
+Despues se necesitara el codigo de la ESP32 que prendera el dispositivo: [Conexion-ESP32](https://github.com/Dev-Fizet/Smart-Security-for-Industry-IoT/tree/main/CO2/Codigos%20para%20ESP32/Conexion_desconexion) 
+
+Este programa realizara la activacion de un relevador para el encendido de un dispositivo cuando reciba un "TRUE" enviado por el mensajero de Node-red cuando las ppm sean mayores a las colocadas por el usuario. 
+
+Por ultimo se utilizo grafana para poder graficar los datos del sensor, teniendo el dashboard de la siguiente manera: 
+![Dashboard-CO2](https://github.com/Dev-Fizet/Smart-Security-for-Industry-IoT/blob/main/CO2/Media/Dashboard-CO2.png)
+
+Si quieres saber como se realiza la calibracion de este sensor y toda la logica que hay en este apartado, preciona click [aquí](https://edu.codigoiot.com/course/view.php?id=993#section-0), ademas comparto el flow donde viene todo este partado. [Node-red-CO2](https://github.com/Dev-Fizet/Smart-Security-for-Industry-IoT/blob/main/CO2/CO2_Node-red.json)
  
 ## Detector de cascos
 
