@@ -26,7 +26,7 @@ El objetivo principal de este proyecto es mejorar la seguridad laboral y minimiz
 
 Componentes a utilizar
 
-+ 2 ESP32 
++ 3 ESP32 
 + ESP32 CAM OV2640
 + FTDI TTL USB Serial Converter FT232RL
 + LED
@@ -57,7 +57,7 @@ Además se necesitará tener instalado en el PC:
 + Python (cualquier versión entre las 3.6 y 3.8, ya que las librerías que se utilizarán trabajan en estas versiones).
 + OpenCV, para instalar OpenCV  ejecuta 'pip install opencv-contrib-python' desde la terminal de Python.
 
-Por otro lado para ejecutar el servidor en la Raspberry Pi se necesitará realizer los siguientes cursos;
+Por otro lado para ejecutar el servidor en la Raspberry Pi se necesitará realizar los siguientes cursos;
 
 + [Instalación de Raspberry OS en Raspberry Pi 4](https://edu.codigoiot.com/course/view.php?id=823)
 + [Configurar WiFi y SSH en Raspberry Pi sin Monitor](https://edu.codigoiot.com/course/view.php?id=815)
@@ -168,9 +168,15 @@ Debido a que se necesita una IP para poder conectarse usa el comando nslookup br
 
 Una vez hecho esto carga el programa en la ESP32 y listo, ya tienes un programa que identifica si se lleva casco de seguridad. Si es así envía un mensaje por MQTT que es recibido por Node Red y activa un indicador. La ESP32 lee el mensaje que llega a Node Red y enciende un LED.
 
-## Detector de Movimiento 
+## Detector de Movimiento y Proximidad
 
-## Detector de Proximidad
+En este repositorio encontrarás los archivos necesarios para poder realizar el modulo 
+
+
+![Diagrama de Conección](https://github.com/Dev-Fizet/Smart-Security-for-Industry-IoT/blob/main/M%C3%B3dulo%20Detecci%C3%B3n%20de%20Movimiento%20y%20Proximidad/Circuito%20Modulo%20Deteccion%20Movimiento%20y%20Proximidad_bb.png)
+
+
+
 
 ## Elaborado por
 + Carlos Roberto Figueroa Zetina
