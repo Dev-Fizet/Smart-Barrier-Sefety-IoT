@@ -135,3 +135,6 @@ Debido a que se necesita una IP para poder conectarse usa el comando nslookup br
 Una vez hecho esto carga el programa en la ESP32 y listo, ya tienes un programa que identifica si se lleva casco de seguridad. Si es así envía un mensaje por MQTT que es recibido por Node Red y activa un indicador. La ESP32 lee el mensaje que llega a Node Red y enciende un LED.
 
 ## Elaborado por
++ Carlos Roberto Figueroa Zetina
++ Karen Yizel Rosas Trejo
++ Arath Tzec Vargas
