@@ -1,0 +1,21 @@
+[
+    {
+        "id": "3e790dbbb0a69764",
+        "type": "function",
+        "z": "94838b605fd8ac9e",
+        "name": "Nombre",
+        "func": "msg.payload = msg.payload.nombre;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 560,
+        "y": 320,
+        "wires": [
+            [
+                "345633d5fc7296ba"
+            ]
+        ]
+    }
+]
