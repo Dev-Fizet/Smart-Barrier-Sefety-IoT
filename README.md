@@ -22,29 +22,63 @@ Sin embargo, en ocasiones, los propios trabajadores pueden ser la causa de los a
 
 El objetivo principal de este proyecto es mejorar la seguridad laboral y minimizar los riesgos en el entorno industrial. Al establecer un sistema de alertas efectivo, se pretende crear un ambiente de trabajo más seguro y consciente, donde los trabajadores estén constantemente recordados de la importancia de cumplir con las medidas de seguridad establecidas. De esta manera, se espera prevenir accidentes y garantizar la integridad y bienestar de todos los empleados en el entorno industrial
 
-## Requisitos
+## Requisitos Generales
 
+Componentes a utilizar
+
++ 2 ESP32 
 + ESP32 CAM OV2640
 + FTDI TTL USB Serial Converter FT232RL
 + LED
 + Resistencia de 330Ω
 + Resistencia de 1KΩ
++ Resistencia de 100KΩ
 + Transistor 2N2222
-+ ESP32 
++ DFPLayer 
++ Bocina de 3W
++ Sensor Ultrasónico HC-SR04 
++ Sensor Acelerómetro y Giroscopio MPU6050
 + Sensor MQ-135 
-+ Instalar mysql, este link sirve como guia para ubuntu [Mysql](https://platzi.com/tutoriales/1566-bd/8226-como-instalar-mysql-y-workbench-en-ubuntu-sin-morir-en-el-intento/), si es instalado en windows, descargar normalmente. 
-+ Instalar grafana: [Grafana](https://grafana.com/docs/grafana/latest/setup-grafana/installation/debian/)
++ Raspberry Pi 
++ SD 32GB 
++ Fuente para Raspberry 
++ Red WiFi Inalambrica de tipo 2.4 Ghz
 
-Además se necesitará tener instalado:
 
-+ Python (cualquier versión entre las 3.6 y 3.8, ya que las librerías que se utilizarán trabajan en estas versiones).
-+ OpenCV, para instalar OpenCV  ejecuta 'pip install opencv-contrib-python' desde la terminal de Python.
-+ Node Red
+Además se necesitará tener instalado en el PC:
+
 + Arduino IDE
 + Libreria PubSubClient
 + Libreria AverageValue 
 + Libreria ArduinoJson 
-+ Mediapipe, para instalarlo ejecuta 'pip install mediapipe'.
++ Libreria MPU6050
++ Libreria DFPayer
++ Mediapipe, para instalarlo ejecuta 'pip install mediapipe'
++ Python (cualquier versión entre las 3.6 y 3.8, ya que las librerías que se utilizarán trabajan en estas versiones).
++ OpenCV, para instalar OpenCV  ejecuta 'pip install opencv-contrib-python' desde la terminal de Python.
+
+Por otro lado para ejecutar el servidor en la Raspberry Pi se necesitará realizer los siguientes cursos;
+
++ [Instalación de Raspberry OS en Raspberry Pi 4](https://edu.codigoiot.com/course/view.php?id=823)
++ [Configurar WiFi y SSH en Raspberry Pi sin Monitor](https://edu.codigoiot.com/course/view.php?id=815)
+  
+Adicionalmente tambien se puede instalar el VNC para lograr ver el escritorio a distancia
++ [Comunicación VNC con la Raspberry Pi](https://edu.codigoiot.com/course/view.php?id=816)
+
+Ademas via SSH o VNC sera necesario instalar y configurar los siguientes paquetes. 
++ Node Red ,[Instalar Node RED en Raspberry Pi](https://nodered.org/docs/getting-started/raspberrypi)
++ MySQL, [Instalar MySQL en Raspberry Pi](https://randomnerdtutorials.com/raspberry-pi-apache-mysql-php-lamp-server/
+)
++ Grafana: [Instalar Grafana en Raspberry Pi](https://grafana.com/tutorials/install-grafana-on-raspberry-pi/)
+
+EL proyecto esta compuesto por tres modulos y un servidor
+
++ Servidor en Raspberry
++ Módulo Detector CO2
++ Módulo Detector de Casctos
++ Módulo Detecctor de Vibración y Distancia
+
+A lo largo de esta descripcción se detallan los modulos.
 
 ## Detector CO2
 <p> En este apartado encontras un breve resumen de la codigos de la carpeta llamada: CO2 y su conexion con node-red. Tambien encontraras un diagrama de conexiones para que puedas ver el codigo en funcionamiento. </p>
@@ -133,6 +167,10 @@ Además deberás agregar los datos del broker al que se conectará, el broker ut
 Debido a que se necesita una IP para poder conectarse usa el comando nslookup broker.hivemq.com desde tu terminal, de esta forma obtendrás la IP del broker público, esa IP es la que deberás colocar en la línea 41 del código. 
 
 Una vez hecho esto carga el programa en la ESP32 y listo, ya tienes un programa que identifica si se lleva casco de seguridad. Si es así envía un mensaje por MQTT que es recibido por Node Red y activa un indicador. La ESP32 lee el mensaje que llega a Node Red y enciende un LED.
+
+## Detector de Movimiento 
+
+## Detector de Proximidad
 
 ## Elaborado por
 + Carlos Roberto Figueroa Zetina
