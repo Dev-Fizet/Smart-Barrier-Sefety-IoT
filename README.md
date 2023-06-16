@@ -130,7 +130,7 @@ Deberás seguir los siguientes pasos para ejecutar esta parte del proyecto:
 
 1. Crea una carpeta llamada Dataset y en ella descarga las dos carpetas que encontrarás dando clic [aquí](https://github.com/Dev-Fizet/Smart-Security-for-Industry-IoT/tree/main/Detector_de_cascos/Detector%20de%20cascos/Dataset)
 
-2. Entrena el modelo con el código llamado  [Train.py](https://github.com/Dev-Fizet/Smart-Security-for-Industry-IoT/blob/main/Detector_de_cascos/Detector%20de%20cascos/Train.py). Al ejecutar el código se creará un archivo llamado "modelo_cascos.xml".
+2. Entrena el modelo con el código llamado  [Train.py](https://github.com/Dev-Fizet/Smart-Security-for-Industry-IoT/blob/main/Detector%20de%20cascos/Train.py). Al ejecutar el código se creará un archivo llamado "modelo_cascos.xml".
 
 3. Realiza la siguiente conexión:
 
