@@ -1,0 +1,1763 @@
+[
+    {
+        "id": "513b907ae6730b21",
+        "type": "tab",
+        "label": "Detector de Vibraciones",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "ea34678fc86c6841",
+        "type": "tab",
+        "label": "Detector de Distancia",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "83ef58e1305fa538",
+        "type": "tab",
+        "label": "Detector de Cascos",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "94838b605fd8ac9e",
+        "type": "tab",
+        "label": "Detector de CO2",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "a8e6833aef6d3ed5",
+        "type": "tab",
+        "label": "Raspberry Pi",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "6bbc558951cb569c",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "broker.emqx.io",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "f873bf1574abe6c8",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-custom",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#1e2d40",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "customTheme": {
+                "name": "Tema 1",
+                "default": "#4B7930",
+                "baseColor": "#ffffff",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "reset": false
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#4B7930",
+                    "value": "#ffffff",
+                    "edited": true
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#1e2d40",
+                    "edited": true
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#1e2d40",
+                    "edited": true
+                },
+                "group-backgroundColor": {
+                    "value": "#1e2d40",
+                    "edited": true
+                },
+                "widget-textColor": {
+                    "value": "#ffffff",
+                    "edited": true
+                },
+                "widget-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#1e2d40",
+                    "edited": true
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Smart Security for Industry IoT",
+            "hideToolbar": "true",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "0ba476268fe2cc6c",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "broker.hivemq.com",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "e83226600081f25a",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "broker.hivemq.com ",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "91c4558305d3e901",
+        "type": "MySQLdatabase",
+        "name": "",
+        "host": "127.0.0.1",
+        "port": "3306",
+        "db": "nivel_co2_db",
+        "tz": "",
+        "charset": "UTF8"
+    },
+    {
+        "id": "476350dd350725a1",
+        "type": "MySQLdatabase",
+        "name": "",
+        "host": "127.0.0.1",
+        "port": "3306",
+        "db": "fizet_raspberry",
+        "tz": "",
+        "charset": "UTF8"
+    },
+    {
+        "id": "be2882f25afbcb8e",
+        "type": "ui_tab",
+        "name": "Smart Security for Industry IoT",
+        "icon": "dashboard",
+        "order": 2,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "f691e74cf6f4d1c0",
+        "type": "ui_group",
+        "name": "Detector de CO2",
+        "tab": "be2882f25afbcb8e",
+        "order": 1,
+        "disp": false,
+        "width": "26",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "85ae7d973c1051e3",
+        "type": "MySQLdatabase",
+        "name": "",
+        "host": "127.0.0.1",
+        "port": "3306",
+        "db": "fizet_esp32_db",
+        "tz": "",
+        "charset": "UTF8"
+    },
+    {
+        "id": "fdcb77c675a77bc0",
+        "type": "ui_spacer",
+        "z": "a8e6833aef6d3ed5",
+        "name": "spacer",
+        "group": "f691e74cf6f4d1c0",
+        "order": 2,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "a2bc681229fd4049",
+        "type": "ui_spacer",
+        "z": "a8e6833aef6d3ed5",
+        "name": "spacer",
+        "group": "f691e74cf6f4d1c0",
+        "order": 4,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "27534f835e865bfe",
+        "type": "ui_spacer",
+        "z": "a8e6833aef6d3ed5",
+        "name": "spacer",
+        "group": "f691e74cf6f4d1c0",
+        "order": 6,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "59c2ecd2a5e4d426",
+        "type": "ui_spacer",
+        "z": "a8e6833aef6d3ed5",
+        "name": "spacer",
+        "group": "f691e74cf6f4d1c0",
+        "order": 7,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "ecfebf82cc8b3737",
+        "type": "ui_spacer",
+        "z": "a8e6833aef6d3ed5",
+        "name": "spacer",
+        "group": "f691e74cf6f4d1c0",
+        "order": 8,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "d7545e070605a0ea",
+        "type": "ui_spacer",
+        "z": "a8e6833aef6d3ed5",
+        "name": "spacer",
+        "group": "f691e74cf6f4d1c0",
+        "order": 9,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "ecd5e46b17b603cd",
+        "type": "ui_spacer",
+        "z": "a8e6833aef6d3ed5",
+        "name": "spacer",
+        "group": "f691e74cf6f4d1c0",
+        "order": 10,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "e7f4aecafe9f19c6",
+        "type": "ui_spacer",
+        "z": "a8e6833aef6d3ed5",
+        "name": "spacer",
+        "group": "f691e74cf6f4d1c0",
+        "order": 11,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "c759521f5ce7acaf",
+        "type": "ui_spacer",
+        "z": "a8e6833aef6d3ed5",
+        "name": "spacer",
+        "group": "f691e74cf6f4d1c0",
+        "order": 12,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "b699bfc56ae107ab",
+        "type": "ui_spacer",
+        "z": "a8e6833aef6d3ed5",
+        "name": "spacer",
+        "group": "f691e74cf6f4d1c0",
+        "order": 13,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "30e1c814cddaeb70",
+        "type": "ui_spacer",
+        "z": "a8e6833aef6d3ed5",
+        "name": "spacer",
+        "group": "f691e74cf6f4d1c0",
+        "order": 14,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "4dc35e11ff0d1709",
+        "type": "ui_spacer",
+        "z": "a8e6833aef6d3ed5",
+        "name": "spacer",
+        "group": "f691e74cf6f4d1c0",
+        "order": 15,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "ca2d60a05f86b9b7",
+        "type": "ui_spacer",
+        "z": "a8e6833aef6d3ed5",
+        "name": "spacer",
+        "group": "f691e74cf6f4d1c0",
+        "order": 16,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "3bc94297b6fa07b7",
+        "type": "ui_spacer",
+        "z": "a8e6833aef6d3ed5",
+        "name": "spacer",
+        "group": "f691e74cf6f4d1c0",
+        "order": 17,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "609a4ecf813e65c0",
+        "type": "ui_spacer",
+        "z": "a8e6833aef6d3ed5",
+        "name": "spacer",
+        "group": "f691e74cf6f4d1c0",
+        "order": 18,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "4de05b91583428a8",
+        "type": "ui_spacer",
+        "z": "a8e6833aef6d3ed5",
+        "name": "spacer",
+        "group": "f691e74cf6f4d1c0",
+        "order": 22,
+        "width": 10,
+        "height": 1
+    },
+    {
+        "id": "9188c6c67a31209a",
+        "type": "ui_spacer",
+        "z": "a8e6833aef6d3ed5",
+        "name": "spacer",
+        "group": "f691e74cf6f4d1c0",
+        "order": 24,
+        "width": 8,
+        "height": 1
+    },
+    {
+        "id": "f346caa5111804a0",
+        "type": "ui_spacer",
+        "z": "a8e6833aef6d3ed5",
+        "name": "spacer",
+        "group": "f691e74cf6f4d1c0",
+        "order": 29,
+        "width": 9,
+        "height": 1
+    },
+    {
+        "id": "e7fb1ecb88b07df7",
+        "type": "ui_spacer",
+        "z": "a8e6833aef6d3ed5",
+        "name": "spacer",
+        "group": "f691e74cf6f4d1c0",
+        "order": 31,
+        "width": 10,
+        "height": 1
+    },
+    {
+        "id": "a09920af1c428746",
+        "type": "ui_spacer",
+        "z": "a8e6833aef6d3ed5",
+        "name": "spacer",
+        "group": "f691e74cf6f4d1c0",
+        "order": 32,
+        "width": 9,
+        "height": 1
+    },
+    {
+        "id": "038e6732f3f78ecd",
+        "type": "ui_spacer",
+        "z": "a8e6833aef6d3ed5",
+        "name": "spacer",
+        "group": "f691e74cf6f4d1c0",
+        "order": 33,
+        "width": 10,
+        "height": 1
+    },
+    {
+        "id": "b27cee2299a31211",
+        "type": "ui_spacer",
+        "z": "a8e6833aef6d3ed5",
+        "name": "spacer",
+        "group": "f691e74cf6f4d1c0",
+        "order": 34,
+        "width": 9,
+        "height": 1
+    },
+    {
+        "id": "e7f6c3228721df8b",
+        "type": "ui_spacer",
+        "z": "a8e6833aef6d3ed5",
+        "name": "spacer",
+        "group": "f691e74cf6f4d1c0",
+        "order": 35,
+        "width": 10,
+        "height": 1
+    },
+    {
+        "id": "89eccf894082a045",
+        "type": "ui_spacer",
+        "z": "a8e6833aef6d3ed5",
+        "name": "spacer",
+        "group": "f691e74cf6f4d1c0",
+        "order": 36,
+        "width": 9,
+        "height": 1
+    },
+    {
+        "id": "18e0528abe50c43b",
+        "type": "ui_spacer",
+        "z": "a8e6833aef6d3ed5",
+        "name": "spacer",
+        "group": "f691e74cf6f4d1c0",
+        "order": 37,
+        "width": 10,
+        "height": 1
+    },
+    {
+        "id": "aad3df047437fae1",
+        "type": "ui_spacer",
+        "z": "a8e6833aef6d3ed5",
+        "name": "spacer",
+        "group": "f691e74cf6f4d1c0",
+        "order": 38,
+        "width": 9,
+        "height": 1
+    },
+    {
+        "id": "d38e3235a60d40f5",
+        "type": "ui_spacer",
+        "z": "a8e6833aef6d3ed5",
+        "name": "spacer",
+        "group": "f691e74cf6f4d1c0",
+        "order": 39,
+        "width": 10,
+        "height": 1
+    },
+    {
+        "id": "803b429628f0efa8",
+        "type": "ui_spacer",
+        "z": "a8e6833aef6d3ed5",
+        "name": "spacer",
+        "group": "f691e74cf6f4d1c0",
+        "order": 40,
+        "width": 9,
+        "height": 1
+    },
+    {
+        "id": "f02b4f2ff07e382f",
+        "type": "ui_spacer",
+        "z": "a8e6833aef6d3ed5",
+        "name": "spacer",
+        "group": "f691e74cf6f4d1c0",
+        "order": 41,
+        "width": 10,
+        "height": 1
+    },
+    {
+        "id": "0441b18061d33235",
+        "type": "mqtt in",
+        "z": "513b907ae6730b21",
+        "name": "",
+        "topic": "Fizet-Dev-Out/Movimiento",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "6bbc558951cb569c",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 130,
+        "y": 420,
+        "wires": [
+            [
+                "a037f6ce2ffc8e53"
+            ]
+        ]
+    },
+    {
+        "id": "b3a6895b3bcdd983",
+        "type": "comment",
+        "z": "513b907ae6730b21",
+        "name": "Escuchador de ESP32",
+        "info": "",
+        "x": 120,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "7acd1b850e2f66c5",
+        "type": "function",
+        "z": "513b907ae6730b21",
+        "name": "Nombre",
+        "func": "msg.payload = msg.payload.nombre;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 520,
+        "y": 420,
+        "wires": [
+            [
+                "f807da928b3cab82"
+            ]
+        ]
+    },
+    {
+        "id": "a037f6ce2ffc8e53",
+        "type": "json",
+        "z": "513b907ae6730b21",
+        "name": "",
+        "property": "payload",
+        "action": "obj",
+        "pretty": false,
+        "x": 370,
+        "y": 420,
+        "wires": [
+            [
+                "7acd1b850e2f66c5",
+                "31aee5ee19a87ad8",
+                "d1a80e95cb621fd2"
+            ]
+        ]
+    },
+    {
+        "id": "f807da928b3cab82",
+        "type": "debug",
+        "z": "513b907ae6730b21",
+        "name": "debug 11",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 800,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "31aee5ee19a87ad8",
+        "type": "function",
+        "z": "513b907ae6730b21",
+        "name": "datos",
+        "func": "msg.payload = msg.payload.datos;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 510,
+        "y": 460,
+        "wires": [
+            [
+                "75accdfce3163a87"
+            ]
+        ]
+    },
+    {
+        "id": "75accdfce3163a87",
+        "type": "debug",
+        "z": "513b907ae6730b21",
+        "name": "debug 12",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 800,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "d1a80e95cb621fd2",
+        "type": "function",
+        "z": "513b907ae6730b21",
+        "name": "Datos mysql",
+        "func": "msg.topic = \"INSERT INTO detecciones_de_movimiento (nombre,AccelX,AccelY,AccelZ,GyroX,GyroY,GyroZ) VALUES ('\" + msg.payload.nombre + \"' ,\" + msg.payload.AccelX + \",\" + msg.payload.AccelY + \",\" + msg.payload.AccelZ + \",\" + msg.payload.GyroX + \",\" + msg.payload.GyroY + \",\" + msg.payload.GyroZ +\");\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 530,
+        "y": 380,
+        "wires": [
+            [
+                "5f8a5539acaae9fa",
+                "625d51d9c6141a70"
+            ]
+        ]
+    },
+    {
+        "id": "5f8a5539acaae9fa",
+        "type": "mysql",
+        "z": "513b907ae6730b21",
+        "mydb": "85ae7d973c1051e3",
+        "name": "Base de Datos para Fizet ESP32 ",
+        "x": 860,
+        "y": 320,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "de5e0a1ec82092f6",
+        "type": "comment",
+        "z": "513b907ae6730b21",
+        "name": "Recepcion de datos",
+        "info": "",
+        "x": 530,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "11a3e46b8693872a",
+        "type": "comment",
+        "z": "513b907ae6730b21",
+        "name": "Base de datos y verificacion",
+        "info": "",
+        "x": 800,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "625d51d9c6141a70",
+        "type": "debug",
+        "z": "513b907ae6730b21",
+        "name": "debug 13",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 800,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "7b26705e6aeb2d21",
+        "type": "ui_template",
+        "z": "513b907ae6730b21",
+        "group": "f691e74cf6f4d1c0",
+        "name": "Gráfica Vibraciones",
+        "order": 26,
+        "width": 0,
+        "height": 0,
+        "format": "<p align=\"center\">\n \n<iframe\n    src=\"http://192.168.0.12:3000/d-solo/e4fd52a7-1756-445b-acfc-a1da8405c6ba/smart-security-for-industry-iot?orgId=1&refresh=5s&panelId=2\"\n    width=\"900\" height=\"400\" frameborder=\"0\"></iframe>\n    </p>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 1010,
+        "y": 380,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "fef456b12e68734b",
+        "type": "ui_text",
+        "z": "513b907ae6730b21",
+        "group": "f691e74cf6f4d1c0",
+        "order": 25,
+        "width": 26,
+        "height": 1,
+        "name": "Movimiento Texto",
+        "label": "",
+        "format": "<p align=\"center\" ><FONT COLOR=\"white\" FONT SIZE=6>En esta apartado encontraras las detecciones de vibraciones de la zona</FONT></p>",
+        "layout": "row-center",
+        "className": "text",
+        "x": 1010,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "0ec1eeeaa843da4b",
+        "type": "mqtt in",
+        "z": "ea34678fc86c6841",
+        "name": "",
+        "topic": "Fizet-Dev-Out/Distancia",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "6bbc558951cb569c",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 140,
+        "y": 240,
+        "wires": [
+            [
+                "7076301ce4bdab1b"
+            ]
+        ]
+    },
+    {
+        "id": "51115093fa481a14",
+        "type": "comment",
+        "z": "ea34678fc86c6841",
+        "name": "Escuchador de ESP32",
+        "info": "",
+        "x": 140,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "8320175574914ede",
+        "type": "function",
+        "z": "ea34678fc86c6841",
+        "name": "Nombre",
+        "func": "msg.payload = msg.payload.nombre;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 540,
+        "y": 240,
+        "wires": [
+            [
+                "4dd2e0210700c46e"
+            ]
+        ]
+    },
+    {
+        "id": "7076301ce4bdab1b",
+        "type": "json",
+        "z": "ea34678fc86c6841",
+        "name": "",
+        "property": "payload",
+        "action": "obj",
+        "pretty": false,
+        "x": 390,
+        "y": 240,
+        "wires": [
+            [
+                "8320175574914ede",
+                "6a5c349302f776da",
+                "6d2f1814ade28d36"
+            ]
+        ]
+    },
+    {
+        "id": "4dd2e0210700c46e",
+        "type": "debug",
+        "z": "ea34678fc86c6841",
+        "name": "debug 14",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 820,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "6a5c349302f776da",
+        "type": "function",
+        "z": "ea34678fc86c6841",
+        "name": "datos",
+        "func": "msg.payload = msg.payload.datos;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 530,
+        "y": 280,
+        "wires": [
+            [
+                "cc8db3f58390ee15"
+            ]
+        ]
+    },
+    {
+        "id": "cc8db3f58390ee15",
+        "type": "debug",
+        "z": "ea34678fc86c6841",
+        "name": "debug 15",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 820,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "6d2f1814ade28d36",
+        "type": "function",
+        "z": "ea34678fc86c6841",
+        "name": "Datos mysql",
+        "func": "msg.topic = \"INSERT INTO detecciones_de_distancia (nombre,datos) VALUES ('\"+ msg.payload.nombre +\"' ,\" + msg.payload.datos +\");\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 550,
+        "y": 200,
+        "wires": [
+            [
+                "8db609ac34b297cf",
+                "65e963b8cc317f4e"
+            ]
+        ]
+    },
+    {
+        "id": "8db609ac34b297cf",
+        "type": "mysql",
+        "z": "ea34678fc86c6841",
+        "mydb": "85ae7d973c1051e3",
+        "name": "Base de Datos para Fizet ESP32 ",
+        "x": 860,
+        "y": 140,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "cbb056d3f2885be4",
+        "type": "comment",
+        "z": "ea34678fc86c6841",
+        "name": "Recepcion de datos",
+        "info": "",
+        "x": 550,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "5aa81777b02f3dc6",
+        "type": "comment",
+        "z": "ea34678fc86c6841",
+        "name": "Base de datos y verificacion",
+        "info": "",
+        "x": 820,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "65e963b8cc317f4e",
+        "type": "debug",
+        "z": "ea34678fc86c6841",
+        "name": "debug 16",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 820,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "155ffe80ba4ab419",
+        "type": "ui_template",
+        "z": "ea34678fc86c6841",
+        "group": "f691e74cf6f4d1c0",
+        "name": "Gráfica Distancia",
+        "order": 28,
+        "width": 0,
+        "height": 0,
+        "format": "<p align=\"center\">\n\n\n<iframe\n    src=\"http://192.168.0.12:3000/d-solo/e4fd52a7-1756-445b-acfc-a1da8405c6ba/smart-security-for-industry-iot?orgId=1&refresh=5s&panelId=3\"\n    width=\"900\" height=\"400\" frameborder=\"0\"></iframe>\n    </p>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 1050,
+        "y": 220,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ee29e3546f72ed74",
+        "type": "ui_text",
+        "z": "ea34678fc86c6841",
+        "group": "f691e74cf6f4d1c0",
+        "order": 27,
+        "width": 26,
+        "height": 1,
+        "name": "Distancia Texto",
+        "label": "",
+        "format": "<p align=\"center\" ><FONT COLOR=\"white\" FONT SIZE=6>En esta  apartado encontraras las detecciones de distancia crítica</FONT></p>",
+        "layout": "row-center",
+        "className": "text",
+        "x": 1040,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "a0a1529825aab80c",
+        "type": "mqtt in",
+        "z": "83ef58e1305fa538",
+        "name": "",
+        "topic": "proyecto/parte2/detector_cascos",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "0ba476268fe2cc6c",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 390,
+        "y": 180,
+        "wires": [
+            [
+                "893a38ac178868c7",
+                "9c3ae474ce60c47c",
+                "6556ab6bc17bc4ff"
+            ]
+        ]
+    },
+    {
+        "id": "893a38ac178868c7",
+        "type": "debug",
+        "z": "83ef58e1305fa538",
+        "name": "debug 10",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 740,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "9c3ae474ce60c47c",
+        "type": "ui_switch",
+        "z": "83ef58e1305fa538",
+        "name": "",
+        "label": "Acceso permitido",
+        "tooltip": "",
+        "group": "f691e74cf6f4d1c0",
+        "order": 23,
+        "width": 8,
+        "height": 1,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "TRUE",
+        "onvalueType": "str",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "FALSE",
+        "offvalueType": "str",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 770,
+        "y": 160,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "6556ab6bc17bc4ff",
+        "type": "mqtt out",
+        "z": "83ef58e1305fa538",
+        "name": "",
+        "topic": "proyecto/escuchador",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "0ba476268fe2cc6c",
+        "x": 780,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "49a996186d697fe2",
+        "type": "ui_text",
+        "z": "83ef58e1305fa538",
+        "group": "f691e74cf6f4d1c0",
+        "order": 21,
+        "width": 26,
+        "height": 1,
+        "name": "Cascos Texto",
+        "label": "",
+        "format": "<p align=\"center\" ><FONT COLOR=\"white\" FONT SIZE=6>En esta apartado encontraras la detección autonoma de cascos</FONT></p>",
+        "layout": "row-center",
+        "className": "text",
+        "x": 760,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "873051223fd9312c",
+        "type": "comment",
+        "z": "83ef58e1305fa538",
+        "name": "Escuchador de ESP32",
+        "info": "",
+        "x": 360,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "bd731e7d1efb50c0",
+        "type": "mqtt in",
+        "z": "94838b605fd8ac9e",
+        "name": "",
+        "topic": "testeo/sensormq135-Tzec",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "e83226600081f25a",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 170,
+        "y": 320,
+        "wires": [
+            [
+                "d330e0d55693444b"
+            ]
+        ]
+    },
+    {
+        "id": "b795140f3c0ce8f9",
+        "type": "ui_template",
+        "z": "94838b605fd8ac9e",
+        "group": "f691e74cf6f4d1c0",
+        "name": "PPM",
+        "order": 5,
+        "width": 11,
+        "height": 5,
+        "format": "<iframe\n    src=\"http://192.168.0.12:3000/d-solo/e4fd52a7-1756-445b-acfc-a1da8405c6ba/smart-security-for-industry-iot?orgId=1&refresh=5s&panelId=6\"\n    width=\"300\" height=\"200\" frameborder=\"0\"></iframe>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 1030,
+        "y": 240,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "352bfcd98d7a2247",
+        "type": "ui_template",
+        "z": "94838b605fd8ac9e",
+        "group": "f691e74cf6f4d1c0",
+        "name": "Grafica",
+        "order": 19,
+        "width": 0,
+        "height": 0,
+        "format": "<p align=\"center\">\n    <iframe\n        src=\"http://192.168.0.12:3000/d-solo/e4fd52a7-1756-445b-acfc-a1da8405c6ba/smart-security-for-industry-iot?orgId=1&refresh=5s&panelId=5\"\n        width=\"1200\" height=\"400\" frameborder=\"0\"></iframe>\n    </p>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 1040,
+        "y": 280,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "5c4f8905bc536bac",
+        "type": "ui_media",
+        "z": "94838b605fd8ac9e",
+        "group": "f691e74cf6f4d1c0",
+        "name": "Nube",
+        "width": 6,
+        "height": 5,
+        "order": 3,
+        "category": "Nube",
+        "file": "co2.png",
+        "layout": "adjust",
+        "showcontrols": true,
+        "loop": true,
+        "onstart": false,
+        "scope": "local",
+        "tooltip": "",
+        "x": 1030,
+        "y": 320,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "09f36a08256f4907",
+        "type": "ui_text",
+        "z": "94838b605fd8ac9e",
+        "group": "f691e74cf6f4d1c0",
+        "order": 1,
+        "width": 26,
+        "height": 1,
+        "name": "CO2 Texto",
+        "label": "",
+        "format": "<p align=\"center\" ><FONT COLOR=\"white\" FONT SIZE=6>En este apartado encontraras los valores medidos en ppm de un sensor MQ-135</FONT></p>",
+        "layout": "row-center",
+        "className": "",
+        "x": 1050,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "9d15bdf159e44af8",
+        "type": "comment",
+        "z": "94838b605fd8ac9e",
+        "name": "Escuchador de ESP32",
+        "info": "",
+        "x": 160,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "18475770ad0533bd",
+        "type": "comment",
+        "z": "94838b605fd8ac9e",
+        "name": "Dashboard",
+        "info": "",
+        "x": 1040,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "3e790dbbb0a69764",
+        "type": "function",
+        "z": "94838b605fd8ac9e",
+        "name": "Nombre",
+        "func": "msg.payload = msg.payload.nombre;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 560,
+        "y": 320,
+        "wires": [
+            [
+                "345633d5fc7296ba"
+            ]
+        ]
+    },
+    {
+        "id": "d330e0d55693444b",
+        "type": "json",
+        "z": "94838b605fd8ac9e",
+        "name": "",
+        "property": "payload",
+        "action": "obj",
+        "pretty": false,
+        "x": 410,
+        "y": 320,
+        "wires": [
+            [
+                "3e790dbbb0a69764",
+                "33b4d5a8cd4581ee",
+                "60034b05af60ca2d"
+            ]
+        ]
+    },
+    {
+        "id": "345633d5fc7296ba",
+        "type": "debug",
+        "z": "94838b605fd8ac9e",
+        "name": "debug 2",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 840,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "33b4d5a8cd4581ee",
+        "type": "function",
+        "z": "94838b605fd8ac9e",
+        "name": "datos",
+        "func": "var datos = msg.payload.datos;\nglobal.set('datos', datos);\nmsg.payload = datos;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 550,
+        "y": 360,
+        "wires": [
+            [
+                "395fd0f059411427"
+            ]
+        ]
+    },
+    {
+        "id": "395fd0f059411427",
+        "type": "debug",
+        "z": "94838b605fd8ac9e",
+        "name": "debug 3",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 840,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "60034b05af60ca2d",
+        "type": "function",
+        "z": "94838b605fd8ac9e",
+        "name": "Datos mysql",
+        "func": "msg.topic = \"INSERT INTO almacen (nombre,datos) VALUES ('\"+ msg.payload.nombre +\"' ,\" + msg.payload.datos +\");\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 570,
+        "y": 280,
+        "wires": [
+            [
+                "af25bf4b0fbcc973",
+                "3c0712fc9c0c6f5e"
+            ]
+        ]
+    },
+    {
+        "id": "af25bf4b0fbcc973",
+        "type": "mysql",
+        "z": "94838b605fd8ac9e",
+        "mydb": "91c4558305d3e901",
+        "name": "Detector de Nivel CO2",
+        "x": 860,
+        "y": 220,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "89585aad6c4273c2",
+        "type": "comment",
+        "z": "94838b605fd8ac9e",
+        "name": "Recepcion de datos",
+        "info": "",
+        "x": 570,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "c369eaef43e74ca2",
+        "type": "comment",
+        "z": "94838b605fd8ac9e",
+        "name": "Base de datos y verificacion",
+        "info": "",
+        "x": 840,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "3c0712fc9c0c6f5e",
+        "type": "debug",
+        "z": "94838b605fd8ac9e",
+        "name": "debug 4",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 840,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "55386d088b4adddd",
+        "type": "ui_text_input",
+        "z": "94838b605fd8ac9e",
+        "name": "Conexion de equipo",
+        "label": "Coloca el minimo de PPM para encender el equipo",
+        "tooltip": "",
+        "group": "f691e74cf6f4d1c0",
+        "order": 20,
+        "width": "0",
+        "height": "0",
+        "passthru": true,
+        "mode": "text",
+        "delay": 300,
+        "topic": "topic",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "msg",
+        "x": 160,
+        "y": 520,
+        "wires": [
+            [
+                "79a196592bd63be3"
+            ]
+        ]
+    },
+    {
+        "id": "79a196592bd63be3",
+        "type": "function",
+        "z": "94838b605fd8ac9e",
+        "name": "PPM de conexion",
+        "func": "var ppm_conexion= msg.payload; \nglobal.set('ppm_conexion', ppm_conexion);\nmsg.payload= ppm_conexion;\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 390,
+        "y": 520,
+        "wires": [
+            [
+                "a7e71a60da78e6af"
+            ]
+        ]
+    },
+    {
+        "id": "a7e71a60da78e6af",
+        "type": "debug",
+        "z": "94838b605fd8ac9e",
+        "name": "debug 8",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 580,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "dc91f3afe58c9e84",
+        "type": "comment",
+        "z": "94838b605fd8ac9e",
+        "name": "Desconexion/Conexion",
+        "info": "",
+        "x": 160,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "bfeda5a93d77737c",
+        "type": "function",
+        "z": "94838b605fd8ac9e",
+        "name": "Comparacion",
+        "func": "var ppm_conexion= global.get(\"ppm_conexion\");\nvar esp32= msg.payload;\nvar estado = \"\";\n\n    if (ppm_conexion <= esp32) {\n        estado = \"TRUE\";\n        msg.payload = estado;\n        return msg;\n    }\n    else{\n        estado=\"FALSE\";\n        msg.payload=estado; \n        return msg; \n    }\n\n\n\n\n    \n\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 370,
+        "y": 600,
+        "wires": [
+            [
+                "0075bf4f6c5a3acd",
+                "85c05024a463de07"
+            ]
+        ]
+    },
+    {
+        "id": "d2223bbc762ae150",
+        "type": "debug",
+        "z": "94838b605fd8ac9e",
+        "name": "debug 9",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 360,
+        "y": 660,
+        "wires": []
+    },
+    {
+        "id": "0075bf4f6c5a3acd",
+        "type": "mqtt out",
+        "z": "94838b605fd8ac9e",
+        "name": "",
+        "topic": "testeo/sensormq135-Tzec/estado",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "e83226600081f25a",
+        "x": 620,
+        "y": 600,
+        "wires": []
+    },
+    {
+        "id": "2c363d49a7fa4c09",
+        "type": "comment",
+        "z": "94838b605fd8ac9e",
+        "name": "Mensajero",
+        "info": "",
+        "x": 840,
+        "y": 600,
+        "wires": []
+    },
+    {
+        "id": "b988318697246685",
+        "type": "inject",
+        "z": "94838b605fd8ac9e",
+        "name": "Inyector de datos ",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "5",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "datos",
+        "payloadType": "global",
+        "x": 150,
+        "y": 600,
+        "wires": [
+            [
+                "d2223bbc762ae150",
+                "bfeda5a93d77737c"
+            ]
+        ]
+    },
+    {
+        "id": "85c05024a463de07",
+        "type": "debug",
+        "z": "94838b605fd8ac9e",
+        "name": "debug 10",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 540,
+        "y": 660,
+        "wires": []
+    },
+    {
+        "id": "24c91680e082cefa",
+        "type": "vcgencmd",
+        "z": "a8e6833aef6d3ed5",
+        "name": "",
+        "fullPath": "/usr/bin/vcgencmd",
+        "command": "measure_temp",
+        "codec": "H264",
+        "clock": "core",
+        "voltage": "core",
+        "memory": "arm",
+        "videoOutput": "0",
+        "separateMsg": false,
+        "x": 400,
+        "y": 100,
+        "wires": [
+            [
+                "cb116852dd29c01e",
+                "f0c577443b7181a0",
+                "c3fd279de0414663"
+            ]
+        ]
+    },
+    {
+        "id": "cb116852dd29c01e",
+        "type": "debug",
+        "z": "a8e6833aef6d3ed5",
+        "name": "Debug Temperatura Raspberry Pi",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 760,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "f277856cc44ee35e",
+        "type": "inject",
+        "z": "a8e6833aef6d3ed5",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "60",
+        "crontab": "",
+        "once": false,
+        "onceDelay": "0.2",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 170,
+        "y": 100,
+        "wires": [
+            [
+                "24c91680e082cefa"
+            ]
+        ]
+    },
+    {
+        "id": "f0c577443b7181a0",
+        "type": "ui_gauge",
+        "z": "a8e6833aef6d3ed5",
+        "name": "",
+        "group": "f691e74cf6f4d1c0",
+        "order": 30,
+        "width": 7,
+        "height": 6,
+        "gtype": "gage",
+        "title": "Temperatura de CPU Raspberry Pi",
+        "label": "",
+        "format": "{{value}}°",
+        "min": "25",
+        "max": "90",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "50",
+        "seg2": "65",
+        "diff": false,
+        "className": "",
+        "x": 760,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "b62e7e7473a19fbd",
+        "type": "mysql",
+        "z": "a8e6833aef6d3ed5",
+        "mydb": "476350dd350725a1",
+        "name": "Temperatura Raspberry",
+        "x": 830,
+        "y": 240,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c3fd279de0414663",
+        "type": "function",
+        "z": "a8e6833aef6d3ed5",
+        "name": "Datos mysql",
+        "func": "msg.payload = msg.payload;\nmsg.topic = \"INSERT INTO temperatura_raspberry (datos) VALUES (\" + msg.payload+\");\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 590,
+        "y": 240,
+        "wires": [
+            [
+                "b62e7e7473a19fbd"
+            ]
+        ]
+    },
+    {
+        "id": "78328e9b7c2ac99f",
+        "type": "exec",
+        "z": "a8e6833aef6d3ed5",
+        "command": "sudo shutdown -h now",
+        "addpay": "",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "",
+        "x": 380,
+        "y": 240,
+        "wires": [
+            [],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "f1e93e8d26130653",
+        "type": "inject",
+        "z": "a8e6833aef6d3ed5",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 160,
+        "y": 240,
+        "wires": [
+            [
+                "78328e9b7c2ac99f"
+            ]
+        ]
+    }
+]
