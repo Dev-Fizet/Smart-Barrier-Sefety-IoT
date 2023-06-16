@@ -121,26 +121,26 @@ En este repositorio encontrarás los archivos necesarios para poder realizar la 
 
 Esta sección consiste en detectar si una persona trae puesto un casco de seguridad, si se detecta que lo trae puesto mandará un mensaje por MQTT a Node Red en donde se activará un indicador que será visible en un dashboard como se ve en la siguiente imagen.
 
-![Dashboard de en Node Red](https://github.com/Dev-Fizet/Smart-Security-for-Industry-IoT/blob/main/Media/Dashboard.png)
+![Dashboard de en Node Red](https://github.com/Dev-Fizet/Smart-Security-for-Industry-IoT/blob/main/Detector_de_cascos/Media/Dashboard.png)
 
 Una vez que se ha mandado el mensaje a Node Red, la ESP32CAM leerá ese mensaje y prenderá un LED indicando que se permite el acceso.
 
 Deberás seguir los siguientes pasos para ejecutar esta parte del proyecto:
 
 
-1. Crea una carpeta llamada Dataset y en ella descarga las dos carpetas que encontrarás dando clic [aquí](https://github.com/Dev-Fizet/Smart-Security-for-Industry-IoT/tree/main/Detector%20de%20cascos/Dataset)
+1. Crea una carpeta llamada Dataset y en ella descarga las dos carpetas que encontrarás dando clic [aquí](https://github.com/Dev-Fizet/Smart-Security-for-Industry-IoT/tree/main/Detector_de_cascos/Detector%20de%20cascos/Dataset)
 
-2. Entrena el modelo con el código llamado  [Train.py](https://github.com/Dev-Fizet/Smart-Security-for-Industry-IoT/blob/main/Detector%20de%20cascos/Train.py). Al ejecutar el código se creará un archivo llamado "modelo_cascos.xml".
+2. Entrena el modelo con el código llamado  [Train.py](https://github.com/Dev-Fizet/Smart-Security-for-Industry-IoT/blob/main/Detector_de_cascos/Detector%20de%20cascos/Train.py). Al ejecutar el código se creará un archivo llamado "modelo_cascos.xml".
 
 3. Realiza la siguiente conexión:
 
-![Conexión para configurar IP de la esp32](https://github.com/Dev-Fizet/Smart-Security-for-Industry-IoT/blob/main/Media/Esquema1.jpg)
+![Conexión para configurar IP de la esp32](https://github.com/Dev-Fizet/Smart-Security-for-Industry-IoT/blob/main/Detector_de_cascos/Media/Esquema1.jpg)
 
 En Arduino IDE abre el ejemplo de CameraWebServer dando dirigiéndote a File>Examples>ESP32>Camera>CameraWebServer
 
 Coloca el nombre de tu Red WiFi y tu contraseña.
 
-![Configuración de red](https://github.com/Dev-Fizet/Smart-Security-for-Industry-IoT/blob/main/Media/RED_y_contrase%C3%B1a.png)
+![Configuración de red](https://github.com/Dev-Fizet/Smart-Security-for-Industry-IoT/blob/main/Detector_de_cascos/Media/RED_y_contrase%C3%B1a.png)
 
 Sube el programa a la ESP32, recuerda que para subir un código deberás conectar con el pin IO0 con GND, y retirar la conexión una vez completado el proceso. Para que se ejecute el código deberás presionar el botón de reset de la ESP32. 
 
@@ -148,13 +148,13 @@ En el monitor serial aparecerá una IP asignada para tu ESP32, será algo pareci
 
 Ahora ya puedes ejecutar el código Prueba_cascos.py. Solo cambia la IP que obtuviste en la siguiente línea del código.
 
-![Línea a modificar](https://github.com/Dev-Fizet/Smart-Security-for-Industry-IoT/blob/main/Media/L%C3%ADnea%20a%20modificar.png)
+![Línea a modificar](https://github.com/Dev-Fizet/Smart-Security-for-Industry-IoT/blob/main/Detector_de_cascos/Media/L%C3%ADnea%20a%20modificar.png)
 
-4. Dirígete a Node Red y agrega el el flow [Detector_de_cascos.json](https://github.com/Dev-Fizet/Smart-Security-for-Industry-IoT/blob/main/Detector_cascos.json)
+4. Dirígete a Node Red y agrega el el flow [Detector_de_cascos.json](https://github.com/Dev-Fizet/Smart-Security-for-Industry-IoT/blob/main/Detector%20de%20cascos/Detector_cascos.json)
 
 5. Realiza la siguiente conexión:
 
-![Conexión con led](https://github.com/Dev-Fizet/Smart-Security-for-Industry-IoT/blob/main/Media/Esquema2.jpg)
+![Conexión con led](https://github.com/Dev-Fizet/Smart-Security-for-Industry-IoT/blob/main/Detector%20de%20cascos/Media/Esquema2.jpg)
 
 Una vez terminadas las conexiones descarga la carpeta donde se encuentra el código de la ESP32, puedes encontrarla dando clic  [aquí](https://github.com/Dev-Fizet/Smart-Security-for-Industry-IoT/tree/main/Detector%20de%20cascos/ESP32MQTT)
 
