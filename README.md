@@ -173,7 +173,7 @@ Una vez hecho esto carga el programa en la ESP32 y listo, ya tienes un programa 
 En este repositorio encontrarás los archivos necesarios para poder realizar el modulo 
 
 
-![Diagrama de Conección](https://github.com/Dev-Fizet/Smart-Security-for-Industry-IoT/blob/main/M%C3%B3dulo%20Detecci%C3%B3n%20de%20Movimiento%20y%20Proximidad/Circuito%20Modulo%20Deteccion%20Movimiento%20y%20Proximidad_bb.png)
+![Diagrama de Conección](https://github.com/Dev-Fizet/Smart-Security-for-Industry-IoT/blob/main/Detecci%C3%B3n%20de%20Movimiento%20y%20Proximidad/Circuito%20Modulo%20Deteccion%20Movimiento%20y%20Proximidad_bb.png)
 
 
 
