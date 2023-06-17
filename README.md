@@ -170,8 +170,33 @@ Una vez hecho esto carga el programa en la ESP32 y listo, ya tienes un programa 
 
 ## Detector de Movimiento y Proximidad
 
-En este repositorio encontrarás los archivos necesarios para poder realizar el modulo 
+En este repositorio encontrarás los archivos necesarios para poder realizar el Detector de Movimiento y Proximidad
 
+El programa estará alojado en GitHub
+
++ [Programación para ESP32 Detector Vibración y Distancia](https://github.com/Dev-Fizet/Smart-Security-for-Industry-IoT/tree/main/Detecci%C3%B3n%20de%20Movimiento%20y%20Proximidad/Deteccion_Movimiento_y_Proximidad_SSI_IoT_Arduino)
+  
+Una vez abierto el programa ,nos dirigiremos al siguiente apartado:
+
+![Img](https://github.com/Dev-Fizet/Smart-Security-for-Industry-IoT/blob/main/Detecci%C3%B3n%20de%20Movimiento%20y%20Proximidad/Media/Constantes%20a%20cambiar%20.png)
+
+Ahí tendremos 3 variables ,la primera es el nombre de la red WiFi (SSID) a la cual se va conectar ,la segunda es  la contraseña de la red WiFi (password) y finalmente la ultima es el broker que se utilizara.
+
+Es necesario mencionar que el ESP32 solamente es compatible con las redes inalámbrica de la tecnología 2.4GHz,en caso de que nunca se realize la conexión favor de verificar la red.
+
+Posteriormente en la programación se harán uso de 3 temas 
+
+En el siguiente tema el ESP32 estará suscrito para recibir información.
+![Img](https://github.com/Dev-Fizet/Smart-Security-for-Industry-IoT/blob/main/Detecci%C3%B3n%20de%20Movimiento%20y%20Proximidad/Media/Tema%20para%20Escuchar%20.png)
+En el siguiente tema el ESP32 estará suscrito para enviar información acerca del movimiento, es importante mencionar que los datos se envia en formato JSON.
+![Img](https://github.com/Dev-Fizet/Smart-Security-for-Industry-IoT/blob/main/Detecci%C3%B3n%20de%20Movimiento%20y%20Proximidad/Media/Tema%20Movimiento.png)
+Y Finalmente en el siguiente tema el ESP32 estará suscrito para enviar información acerca de la distancia, esta información también estará codificada en formato JSON.
+![Img](https://github.com/Dev-Fizet/Smart-Security-for-Industry-IoT/blob/main/Detecci%C3%B3n%20de%20Movimiento%20y%20Proximidad/Media/Tema%20Distancia%20.png)
+Para finalizar, el funcionamiento del equipo es el siguiente.
+
+Mensaje de Inicio
+Mensaje de Conexión a WiFi Exitosa
+Una vez escuchando "El dispositivo se conecto a una red Inalámbrica", el dispositivo estará listo para funcionar.
 
 ![Diagrama de Conección](https://github.com/Dev-Fizet/Smart-Security-for-Industry-IoT/blob/main/Detecci%C3%B3n%20de%20Movimiento%20y%20Proximidad/Circuito%20Modulo%20Deteccion%20Movimiento%20y%20Proximidad_bb.png)
 
