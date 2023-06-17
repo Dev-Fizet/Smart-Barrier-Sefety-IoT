@@ -211,7 +211,7 @@ Posteriomente la programación de Node RED seria la siguiente
 
 ![Img](https://github.com/Dev-Fizet/Smart-Security-for-Industry-IoT/blob/main/Detecci%C3%B3n%20de%20Movimiento%20y%20Proximidad/Media/Programaci%C3%B3n%20en%20Node%20RED.png)
 
-Finalmente el resultado será el sigueinte:
+Finalmente el resultado será el siguiente:
 
 Dashboard de Node RED
 
