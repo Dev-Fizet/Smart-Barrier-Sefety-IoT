@@ -176,7 +176,10 @@ El programa estará alojado en GitHub
 
 + [Programación para ESP32 Detector Vibración y Distancia](https://github.com/Dev-Fizet/Smart-Security-for-Industry-IoT/tree/main/Detecci%C3%B3n%20de%20Movimiento%20y%20Proximidad/Deteccion_Movimiento_y_Proximidad_SSI_IoT_Arduino)
   
-Una vez abierto el programa ,nos dirigiremos al siguiente apartado:
+El diagrama de conexión de este proyecto es el siguiente:
+![Diagrama de Conección](https://github.com/Dev-Fizet/Smart-Security-for-Industry-IoT/blob/main/Detecci%C3%B3n%20de%20Movimiento%20y%20Proximidad/Circuito%20Modulo%20Deteccion%20Movimiento%20y%20Proximidad_bb.png)
+
+Una vez terminando de armar el circuito sera necesario dirigirnos a la programación,nos dirigiremos al siguiente apartado:
 
 ![Img](https://github.com/Dev-Fizet/Smart-Security-for-Industry-IoT/blob/main/Detecci%C3%B3n%20de%20Movimiento%20y%20Proximidad/Media/Constantes%20a%20cambiar%20.png)
 
@@ -200,11 +203,24 @@ Y Finalmente en el siguiente tema el ESP32 estará suscrito para enviar informac
 
 Para finalizar, el funcionamiento del equipo es el siguiente.
 
-Mensaje de Inicio
-Mensaje de Conexión a WiFi Exitosa
-Una vez escuchando "El dispositivo se conecto a una red Inalámbrica", el dispositivo estará listo para funcionar.
++ Mensaje de Inicio
++ Mensaje de Conexión a WiFi Exitosa
++ Una vez escuchando "El dispositivo se conecto a una red Inalámbrica", el dispositivo estará listo para funcionar.
 
-![Diagrama de Conección](https://github.com/Dev-Fizet/Smart-Security-for-Industry-IoT/blob/main/Detecci%C3%B3n%20de%20Movimiento%20y%20Proximidad/Circuito%20Modulo%20Deteccion%20Movimiento%20y%20Proximidad_bb.png)
+Posteriomente la programación de Node RED seria la siguiente 
+
+![Img](https://github.com/Dev-Fizet/Smart-Security-for-Industry-IoT/blob/main/Detecci%C3%B3n%20de%20Movimiento%20y%20Proximidad/Media/Programaci%C3%B3n%20en%20Node%20RED.png)
+
+Finalmente el resultado será el sigueinte:
+
+Dashboard de Node RED
+
+![IMG](https://github.com/Dev-Fizet/Smart-Security-for-Industry-IoT/blob/main/Detecci%C3%B3n%20de%20Movimiento%20y%20Proximidad/Media/Gr%C3%A1ficas%20en%20Dashboard%20de%20Node%20RED.png)
+
+Gráficas en Grafana
+
+![Img](https://github.com/Dev-Fizet/Smart-Security-for-Industry-IoT/blob/main/Detecci%C3%B3n%20de%20Movimiento%20y%20Proximidad/Media/Gr%C3%A1ficas%20en%20Grafana.png)
+
 
 
 
