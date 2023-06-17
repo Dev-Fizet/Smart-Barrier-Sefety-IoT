@@ -187,11 +187,17 @@ Es necesario mencionar que el ESP32 solamente es compatible con las redes inalá
 Posteriormente en la programación se harán uso de 3 temas 
 
 En el siguiente tema el ESP32 estará suscrito para recibir información.
+
 ![Img](https://github.com/Dev-Fizet/Smart-Security-for-Industry-IoT/blob/main/Detecci%C3%B3n%20de%20Movimiento%20y%20Proximidad/Media/Tema%20para%20Escuchar%20.png)
+
 En el siguiente tema el ESP32 estará suscrito para enviar información acerca del movimiento, es importante mencionar que los datos se envia en formato JSON.
+
 ![Img](https://github.com/Dev-Fizet/Smart-Security-for-Industry-IoT/blob/main/Detecci%C3%B3n%20de%20Movimiento%20y%20Proximidad/Media/Tema%20Movimiento.png)
+
 Y Finalmente en el siguiente tema el ESP32 estará suscrito para enviar información acerca de la distancia, esta información también estará codificada en formato JSON.
+
 ![Img](https://github.com/Dev-Fizet/Smart-Security-for-Industry-IoT/blob/main/Detecci%C3%B3n%20de%20Movimiento%20y%20Proximidad/Media/Tema%20Distancia%20.png)
+
 Para finalizar, el funcionamiento del equipo es el siguiente.
 
 Mensaje de Inicio
