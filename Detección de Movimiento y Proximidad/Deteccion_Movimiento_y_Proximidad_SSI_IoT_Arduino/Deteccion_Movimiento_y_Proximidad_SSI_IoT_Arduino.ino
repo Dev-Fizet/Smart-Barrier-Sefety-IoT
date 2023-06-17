@@ -9,7 +9,7 @@ dfrobot/DFRobotDFPlayerMini@^1.0.5
 knolleary/PubSubClient@^2.8
 bblanchon/ArduinoJson@^6.21.2
 
-Creado por Carlos Fizet 
+Creado por Carlos Fizet
 Proyecto Final del Curso IoT por Código IoT
 Junio 2023
 */
@@ -26,9 +26,9 @@ Junio 2023
 // Configuración de WiFi
 
 #define BUILTIN_LED 2
-const char *ssid = "Fizet IoT";
-const char *password = "carloscarlos";
-const char *mqtt_server = "broker.emqx.io";
+const char *ssid = "Fizet IoT";             // Nombre de la Red WiFi
+const char *password = "carloscarlos";      // Constraseña de la Red WiFi
+const char *mqtt_server = "broker.emqx.io"; // Server MQTT
 
 WiFiClient espClient;
 PubSubClient client(espClient);
@@ -42,9 +42,9 @@ void setup_wifi()
 {
 
   delay(10);
-  // We start by connecting to a WiFi network
+  // Iniciamos la conexión del WiFi
   Serial.println();
-  Serial.print("Connecting to ");
+  Serial.print("Conectado a ");
   Serial.println(ssid);
 
   WiFi.mode(WIFI_STA);
@@ -59,8 +59,8 @@ void setup_wifi()
   randomSeed(micros());
 
   Serial.println("");
-  Serial.println("WiFi connected");
-  Serial.println("IP address: ");
+  Serial.println("WiFi conectado");
+  Serial.println("IP: ");
   Serial.println(WiFi.localIP());
 }
 
@@ -74,38 +74,20 @@ void callback(char *topic, byte *payload, unsigned int length)
     Serial.print((char)payload[i]);
   }
   Serial.println();
-
-  // Switch on the LED if an 1 was received as first character
-  if ((char)payload[0] == '1')
-  {
-    digitalWrite(BUILTIN_LED, LOW);
-    // Turn the LED on (Note that LOW is the voltage level
-    // but actually the LED is on; this is because
-    // it is active low on the ESP-01)
-  }
-  else
-  {
-    digitalWrite(BUILTIN_LED, HIGH);
-    // Turn the LED off by making the voltage HIGH
-  }
 }
 
 void reconnect()
 {
-  // Loop until we're reconnected
+
   while (!client.connected())
   {
-    Serial.print("Attempting MQTT connection...");
-    // Create a random client ID
+    Serial.print("Esperando MQTT ...");
     String clientId = "ESP32-";
     clientId += String(random(0xffff), HEX);
-    // Attempt to connect
     if (client.connect(clientId.c_str()))
     {
-      Serial.println("connected");
-      // Once connected, publish an announcement...
+      Serial.println("Conectado");
       client.publish("Fizet-Dev-Out", "Fizet Dev ESP32 Online");
-      // ... and resubscribe
       client.subscribe("Fizet-Dev-In");
     }
     else
@@ -113,22 +95,20 @@ void reconnect()
       Serial.print("failed, rc=");
       Serial.print(client.state());
       Serial.println(" try again in 5 seconds");
-      // Wait 5 seconds before retrying
       delay(5000);
     }
   }
 }
 
 //
-HardwareSerial mySoftwareSerial(1);
+HardwareSerial mySoftwareSerial(1); // RX(16) TX(17)
 DFRobotDFPlayerMini myDFPlayer;
 
 // Configuración de Sensor Ultrasónico
 
-const int trigPin = 5;
-const int echoPin = 18;
+const int trigPin = 5;  // PIN 5
+const int echoPin = 18; // PIN 18
 
-// define sound speed in cm/uS
 #define SOUND_SPEED 0.034
 #define CM_TO_INCH 0.393701
 
@@ -138,20 +118,19 @@ float distanceInch;
 
 // Configuracion mpu6050
 Adafruit_MPU6050 mpu;
-
 //
 
 void setup()
 {
 
-  mySoftwareSerial.begin(9600, SERIAL_8N1, 16, 17); // speed, type, RX, TX
+  mySoftwareSerial.begin(9600, SERIAL_8N1, 16, 17);
   Serial.begin(115200);
 
-  pinMode(trigPin, OUTPUT); // Sets the trigPin as an Output
-  pinMode(echoPin, INPUT);  // Sets the echoPin as an Input
+  pinMode(trigPin, OUTPUT);
+  pinMode(echoPin, INPUT);
 
-  // Inicio de WiFi y
-  pinMode(BUILTIN_LED, OUTPUT); // Initialize the BUILTIN_LED pin as an output
+  // Inicio de WiFi
+  pinMode(BUILTIN_LED, OUTPUT);
 
   Serial.println();
   Serial.println(F("Smart Security for Industry IoT by Fizet"));
@@ -191,25 +170,25 @@ void setup()
   Serial.println("MPU6050 OK!");
   //
 
-  // setup motion detection
+  // Configuración de Detección de Movimiento
   mpu.setHighPassFilter(MPU6050_HIGHPASS_0_63_HZ);
   mpu.setMotionDetectionThreshold(1);
   mpu.setMotionDetectionDuration(20);
-  mpu.setInterruptPinLatch(true); // Keep it latched.  Will turn off when reinitialized.
+  mpu.setInterruptPinLatch(true);
   mpu.setInterruptPinPolarity(true);
   mpu.setMotionInterrupt(true);
 
   Serial.println(F("Mensaje de Inicio"));
-  myDFPlayer.play(1); // Play the first mp3
-  delay(4000);        // Duración del mensaje
+  myDFPlayer.play(1);
+  delay(4000);
 
   setup_wifi();
   client.setServer(mqtt_server, 1883);
   client.setCallback(callback);
 
   Serial.println(F("Mensaje de WiFi OK"));
-  myDFPlayer.play(2); // Play the first mp3
-  delay(6000);        // Duración del mensaje
+  myDFPlayer.play(2);
+  delay(6000);
 }
 
 void loop()
@@ -225,11 +204,11 @@ void loop()
 
   if (mpu.getMotionInterruptStatus())
   {
-    /* Get new sensor events with the readings */
+    /* Detector de movimientos */
     sensors_event_t a, g, temp;
     mpu.getEvent(&a, &g, &temp);
 
-    /* Print out the values */
+    /* Imprime Valores */
     Serial.print("AccelX:");
     Serial.print(a.acceleration.x);
     Serial.print(",");
@@ -248,7 +227,7 @@ void loop()
     Serial.print("GyroZ:");
     Serial.print(g.gyro.z);
     Serial.println("");
-    //
+    
     // Crear el objeto JSON
     DynamicJsonDocument jsonDoc(200);
     jsonDoc["nombre"] = "ESP32 Fizet Dev";
@@ -268,33 +247,28 @@ void loop()
     client.publish("Fizet-Dev-Out/Movimiento", datos);
 
     Serial.println(F("Mensaje de Alerta Detección de Movimiento"));
-    myDFPlayer.play(3); // Loop the first mp3
+    myDFPlayer.play(3); 
     delay(6000);
   }
   else
   {
-    myDFPlayer.pause(); // pause the mp3
+    myDFPlayer.pause(); 
   }
 
   // Programación Sensor Ultrasónico
-  // Clears the trigPin
+ 
   digitalWrite(trigPin, LOW);
   delayMicroseconds(2);
-  // Sets the trigPin on HIGH state for 10 micro seconds
+ 
   digitalWrite(trigPin, HIGH);
   delayMicroseconds(10);
   digitalWrite(trigPin, LOW);
 
-  // Reads the echoPin, returns the sound wave travel time in microseconds
   duration = pulseIn(echoPin, HIGH);
 
-  // Calculate the distance
+  // Distancia
   distanceCm = duration * SOUND_SPEED / 2;
 
-  // Convert to inches
-  distanceInch = distanceCm * CM_TO_INCH;
-
-  // Prints the distance in the Serial Monitor
   Serial.print("Distance (cm): ");
   Serial.println(distanceCm);
 
@@ -315,11 +289,11 @@ void loop()
     client.publish("Fizet-Dev-Out/Distancia", datos);
 
     Serial.println(F("Mensaje de Alerta de Alto Riesgo"));
-    myDFPlayer.play(4); // Loop the first mp3
+    myDFPlayer.play(4); 
     delay(6000);
   }
   else
   {
-    myDFPlayer.pause(); // pause the mp3
+    myDFPlayer.pause(); 
   }
 }
